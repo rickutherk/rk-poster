@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RK Poster</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">RK <span>Poster</span></a>
+  <nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></nav>
+</header>
+<main>
+  <h1>Post one clip to all my channels at once</h1>
+  <p class="muted">RK Poster is a personal, internal tool used only by its owner, the creator behind
+  <b>Ricku the RK Gaming</b>. It is not sold or offered to the public.</p>
+
+  <div class="card">
+    <p><span class="yt"><i></i>Uses YouTube API Services</span></p>
+    <p>RK Poster uses the official <b>YouTube Data API v3</b> to upload short gaming clips to YouTube channels
+    that the owner controls. The owner signs in with Google, chooses a channel, and grants permission to
+    upload videos and read basic channel details (channel name and ID).</p>
+    <p>By using RK Poster you agree to be bound by the
+    <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>.
+    See also the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+  </div>
+
+  <h2>How it works</h2>
+  <ul>
+    <li>The owner connects their own YouTube channels with Google sign-in (OAuth).</li>
+    <li>The owner uploads a clip once, writes a title and caption, and ticks which channels to post to.</li>
+    <li>RK Poster uploads the clip to each selected channel with <code>videos.insert</code>, spaced out over time.</li>
+    <li>Everything runs on the owner's own computer. No data is sold, shared or sent to any other server.</li>
+  </ul>
+
+  <h2>API methods used</h2>
+  <ul>
+    <li><code>videos.insert</code> to upload the owner's clips</li>
+    <li><code>channels.list</code> (mine=true) to show the connected channel's name</li>
+  </ul>
+</main>
+<footer>
+  <a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a>
+  <p>© 2026 RK Poster. YouTube is a trademark of Google LLC.</p>
+</footer>
+</body>
+</html>
